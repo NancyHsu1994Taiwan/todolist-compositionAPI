@@ -1,0 +1,45 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  label {
+    display: block;
+    font-family: Noto Sans TC;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  input {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  a {
+    display: block;
+  }
+}
+@layer utilities {
+  .title {
+    font-family: Baloo Thambi 2;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .title-2 {
+    font-family: Noto Sans TC;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .errorMessage {
+    @apply text-sm text-warning;
+  }
+}
